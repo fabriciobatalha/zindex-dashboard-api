@@ -1,19 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 
-class ProdutoController extends Controller
+class ProductController extends Controller
 {
     public function index()
     {
-        return view('loja.produto.index');
-    }
+        $users = User::all();
 
-    public function create()
-    {
-        //
+        return response()->json($users);
     }
 
     public function store(Request $request)
@@ -22,11 +21,6 @@ class ProdutoController extends Controller
     }
 
     public function show($id)
-    {
-        //
-    }
-
-    public function edit($id)
     {
         //
     }

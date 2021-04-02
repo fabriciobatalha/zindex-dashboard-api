@@ -37,6 +37,11 @@ class LoginController extends Controller
         return auth()->user();
     }
 
+    public function validateToken()
+    {
+       return auth('api')->check();
+    }
+
     public function logout()
     {
         auth('api')->logout();

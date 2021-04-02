@@ -9,6 +9,7 @@ Route::get('/', function() {
 
 Route::post('fazer-login', 'Api\\Auth\\LoginController@login');
 Route::post('cadastrar-usuario', 'Api\\Auth\\RegisterController@cadastro');
+Route::post('validar-token', 'Api\\Auth\\LoginController@validateToken');
 
 Route::group(['middleware' => ['apiJwt']], function() {
     Route::post('logout', 'Api\\Auth\\LoginController@logout');

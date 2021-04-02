@@ -32,10 +32,16 @@ class LoginController extends Controller
         ]);
     }
 
+    public function usuarioLogado() 
+    {
+        return auth()->user();
+    }
+
     public function logout()
     {
         auth('api')->logout();
 
         return response()->json(['message' => 'Successfully logged out']);
     }
+
 }

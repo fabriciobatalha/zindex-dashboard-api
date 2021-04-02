@@ -13,10 +13,10 @@ class RegisterController extends Controller
     //     $this->middleware('guest');
     // }
 
-    protected function cadastro(Request $request)
+    public function cadastro(Request $request)
     {
         return User::create([
-            'name' => $request->nome,
+            'nome' => $request->nome,
             'email' => $request->email,
             'password' => bcrypt($request->senha),
             'cep' => $request->cep,

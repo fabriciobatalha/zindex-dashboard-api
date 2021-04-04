@@ -10,9 +10,11 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $users = User::all();
-
-        return response()->json($users);
+        $url = "https://pokeapi.co/api/v2/pokemon";
+        $produtos = file_get_contents($url);
+        
+        // return response()->json($url);
+        return $produtos;
     }
 
     public function store(Request $request)

@@ -23,6 +23,20 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at' => 'datetime',
     ];
 
+    public static function cadastrar($request) {
+        return User::create([
+            'nome' => $request->nome,
+            'email' => $request->email,
+            'password' => bcrypt($request->senha),
+            'cep' => $request->cep,
+            'rua' => $request->rua,
+            'numero' => $request->numero,
+            'bairro' => $request->bairro,
+            'cidade' => $request->cidade,
+            'estado' => $request->estado
+        ]);
+    }
+
     public function getJWTIdentifier()
     {
         return $this->getKey();

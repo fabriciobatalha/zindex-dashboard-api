@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function() {
@@ -10,7 +9,6 @@ Route::get('/', function() {
 Route::post('fazer-login', 'Api\\Auth\\LoginController@login');
 Route::post('cadastrar-usuario', 'Api\\Auth\\RegisterController@cadastro');
 Route::post('validar-token', 'Api\\Auth\\LoginController@validateToken');
-Route::resource('produto', 'Api\\ProductController');
 
 Route::group(['middleware' => ['apiJwt']], function() {
     Route::post('logout', 'Api\\Auth\\LoginController@logout');

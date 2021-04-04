@@ -22,8 +22,8 @@ $ composer install
 # Disponibilizando .env
 $ cp .env.example .env
 
-# Rode as migrations do banco de dados (Informe as informações do banco de dados no .env)
-$ php artisan migrate #antes de rodar este comando verifique sua configuracao com banco em .env
+# Rode as migrations do banco de dados (Antes: informe as informações do banco de dados no .env)
+$ php artisan migrate
 
 # Execute a aplicação em modo de desenvolvimento
 $ php artisan serve
@@ -35,7 +35,7 @@ $ php artisan serve
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Laravel](https://br.vuejs.org/)
+- [Laravel](https://laravel.com/)
 - [JWT](https://jwt.io/)
 - [Eloquent ORM](https://laravel.com/docs/7.x/eloquent)
 - [MySQL](https://www.mysql.com/)

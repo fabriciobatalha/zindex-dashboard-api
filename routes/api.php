@@ -6,8 +6,8 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::post('fazer-login', 'Api\\Auth\\LoginController@login');
 Route::post('cadastrar-usuario', 'Api\\Auth\\RegisterController@cadastro');
+Route::post('fazer-login', 'Api\\Auth\\LoginController@login');
 Route::post('validar-token', 'Api\\Auth\\LoginController@validateToken');
 
 Route::group(['middleware' => ['apiJwt']], function() {

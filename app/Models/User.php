@@ -27,7 +27,7 @@ class User extends Authenticatable implements JWTSubject
         return User::create([
             'nome' => $request->nome,
             'email' => $request->email,
-            'password' => bcrypt($request->senha),
+            'password' => $request->senha,
             'cep' => $request->cep,
             'rua' => $request->rua,
             'numero' => $request->numero,

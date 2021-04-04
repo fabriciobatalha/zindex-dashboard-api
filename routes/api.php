@@ -6,7 +6,7 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::post('cadastrar-usuario', 'Api\\Auth\\RegisterController@cadastro');
+Route::resource('cadastrar-usuario', 'Api\\Auth\\RegisterController');
 Route::post('fazer-login', 'Api\\Auth\\LoginController@login');
 Route::post('validar-token', 'Api\\Auth\\LoginController@validateToken');
 

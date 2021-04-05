@@ -24,6 +24,12 @@ class User extends Authenticatable implements JWTSubject
     ];
 
     public static function cadastrar($request) {
+        $tamSenha = strlen($request->senha);
+
+        if ($tamSenha <= 0) {
+            return response()->json(['message' => 'Senha vazia!'], 500);
+        }
+        
         return User::create([
             'nome' => $request->nome,
             'email' => $request->email,

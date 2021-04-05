@@ -24,16 +24,13 @@ class User extends Authenticatable implements JWTSubject
     ];
 
     public static function cadastrar($request) {
-        $tamSenha = strlen($request->senha);
-
-        if ($tamSenha <= 0) {
-            return response()->json(['message' => 'Senha vazia!'], 500);
+        if (empty($request->nome) || empty($request->email) || empty($request->senha) || empty($request->cep) || empty($request->rua) || empty($request->numero) || empty($request->bairro) || empty($request->cidade) || empty($request->estado)) {
+            return response()->json(['message' => 'Preencha todos os campos!'], 500);
         }
-        
+
         return User::create([
             'nome' => $request->nome,
             'email' => $request->email,
-            'password' => $request->senha,
             'password' => bcrypt($request->senha),
             'cep' => $request->cep,
             'rua' => $request->rua,

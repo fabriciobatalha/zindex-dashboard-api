@@ -4,7 +4,7 @@
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Composer](https://getcomposer.org/). 
+[Git](https://git-scm.com), [PHP](https://www.php.net/downloads/), [Composer](https://getcomposer.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 - PHP >= 7.2.5
@@ -18,12 +18,6 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 # Clone este repositório
 $ git clone <https://github.com/fabriciobatalha/zindex-dashboard-api.git>
-
-# Instale o PHP 7.2.5
-$ https://www.php.net/downloads
-
-# Instale o Composer
-$ https://getcomposer.org/download/
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd zindex-dashboard-api

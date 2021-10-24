@@ -1,5 +1,5 @@
 <h1 align="center"> zindex-dashboard-api </h1>
-<p align="center"> Este projeto deverá rodar juntamente com o projeto zindex-dashboard-api </p>
+<p align="center"> Este projeto deverá rodar juntamente com o projeto zindex-dashboard-web </p>
 
 ### Pré-requisitos
 

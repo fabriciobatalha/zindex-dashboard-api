@@ -1,5 +1,5 @@
-<h1 align="center"> beCliente-api </h1>
-<p align="center"> Este projeto deverá rodar juntamente com o projeto beCliente-web </p>
+<h1 align="center"> zindex-dashboard-api </h1>
+<p align="center"> Este projeto deverá rodar juntamente com o projeto zindex-dashboard-api </p>
 
 ### Pré-requisitos
 
@@ -13,14 +13,14 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 
-### 🎲 Rodando o beCliente-api
+### 🎲 Rodando o zindex-dashboard-api
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/fabriciobatalha/beCliente-api.git>
+$ git clone <https://github.com/fabriciobatalha/zindex-dashboard-api.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd beCliente-web
+$ cd zindex-dashboard-api
 
 # Instale as dependências
 $ composer install

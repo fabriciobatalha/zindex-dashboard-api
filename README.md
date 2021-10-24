@@ -19,6 +19,12 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 # Clone este repositório
 $ git clone <https://github.com/fabriciobatalha/zindex-dashboard-api.git>
 
+# Instale o PHP 7.2.5
+$ https://www.php.net/downloads
+
+# Instale o Composer
+$ https://getcomposer.org/download/
+
 # Acesse a pasta do projeto no terminal/cmd
 $ cd zindex-dashboard-api
 
